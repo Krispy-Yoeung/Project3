@@ -1,0 +1,46 @@
+
+.lead {
+    color: white;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    text-align: center;
+    margin-top: 10%;
+}
+
+.SignUpContainer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10%;
+    color: black;
+}
+
+.LogInContainer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10%;
+    color: black;
+}
+
+input {
+    text-align: center;
+    padding: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 8px;
+}
+
+.btn {
+   background-color: ghostwhite;
+    color: teal;
+    border: black;
+}
+
+.loginForm {
+    text-align:center;
+}
+
+
