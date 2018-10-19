@@ -1,5 +1,5 @@
 # mySuperheroList
-
+Search your favorite Superhero and find all the juicy details about them .
 
 
 ## Built in
