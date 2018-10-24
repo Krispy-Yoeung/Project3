@@ -1,14 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
+import "./Superhero.css";
 
+class Superhero extends Component {
+  render() {
+    return <div>Superhero</div>;
+  }
+}
 
-
-
-const Superhero = () => (
-    <div className= "main-container">
-        <h3>Superhero Page</h3>
-        
-    </div>  
-)
-
-export default Superhero
+export default Superhero;

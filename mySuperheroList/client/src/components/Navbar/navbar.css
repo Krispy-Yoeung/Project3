@@ -1,16 +1,15 @@
 .navbar {
-    height: 55px;
-    background-color: ghostwhite;
-    margin-top: 1%;
+  height: 100px;
+  background-color: ghostwhite;
+  /* margin-top: 1%; */
 }
 
 h1 {
-    color: black;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-
 .text-secondary {
-    text-align: right;
+  text-align: right;
 }

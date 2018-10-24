@@ -46,6 +46,9 @@ class Navbar extends Component {
                                 <Link to="/superhero" className="btn btn-link text-secondary">
                                     <span className="text-secondary">Superhero</span>
 				                </Link>
+                                <Link to="/forum" className="btn btn-link text-secondary">
+                                    <span className="text-secondary">Forum</span>
+				                </Link>
                                 <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
                                 <span className="text-secondary">Logout</span></Link>
                             </section>

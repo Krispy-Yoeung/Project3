@@ -12,6 +12,9 @@ import Dashboard from './components/Dashboard'
 
 
 import Footer from './components/Footer/footer'
+import Forum from './components/Forum/forum';
+import Random from './components/Forum/Categories/random'
+import NewTopic from './components/Forum/NewTopic/newTopic';
 
 
 class App extends Component {
@@ -87,6 +90,28 @@ class App extends Component {
           exact path="/dashboard"
           render={() =>
             <Dashboard
+              loggedIn={this.state.loggedIn}
+            />}
+        />
+        <Route
+          exact path="/forum"
+          render={() =>
+            <Forum
+              loggedIn={this.state.loggedIn}
+            />}
+        />
+        <Route
+          exact path="/newtopic"
+          render={() =>
+            <NewTopic
+              username={this.state.username}
+              loggedIn={this.state.loggedIn}
+            />}
+        />
+        <Route
+          exact path="/forum/random"
+          render={() =>
+            <Random
               loggedIn={this.state.loggedIn}
             />}
         />

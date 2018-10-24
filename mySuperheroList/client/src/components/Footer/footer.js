@@ -1,4 +1,5 @@
 import React from 'react';
+import "./footer.css";
 
 const Footer = () => (
     <nav className="navbar navbar-light bg-light p-4 mt-5" className="footer">

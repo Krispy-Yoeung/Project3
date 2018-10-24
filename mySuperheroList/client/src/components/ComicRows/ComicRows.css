@@ -1,0 +1,11 @@
+.table {
+  margin: 10px;
+  border: solid 2px white;
+  width: 100%;
+  text-align: left;
+}
+
+.pictures {
+  height: 100px;
+  width: 100px;
+}
