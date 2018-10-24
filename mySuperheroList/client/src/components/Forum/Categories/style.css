@@ -1,20 +1,20 @@
-.genres {
+.categories {
     text-align: center;
         /* background: #369; */
 }
 
-.genres ul {
+.categories ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.genres li {
+.categories li {
     display: inline-block;
     padding: 20px 50px
 }
 
-.genres li a {
+.categories li a {
     color: white;
 }
 

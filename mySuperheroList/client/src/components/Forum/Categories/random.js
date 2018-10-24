@@ -27,10 +27,11 @@ class Random extends Component {
         const loggedIn = this.props.loggedIn;
         return (
             <Fragment>
-                <div className="genres">
+                <div className="categories">
                     <ul>
                         <li><Link to="/forum">All</Link></li>
-                        <li><Link to="/forum/superhero">Superhero</Link></li>                       
+                        <li><Link to="/forum/superhero">Superhero</Link></li>
+                        <li><Link to="/forum/villain">Villain</Link></li>                                        
                         <li><Link to="/forum/random">Random</Link></li>
                         
                     </ul>

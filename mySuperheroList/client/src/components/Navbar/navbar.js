@@ -43,7 +43,7 @@ class Navbar extends Component {
                                 <Link to="/dashboard" className="btn btn-link ml-5">
                                     <span className="text-secondary">Dashboard</span>
 				                </Link>
-                                <Link to="/superhero" className="btn btn-link text-secondary">
+                                <Link to="/superheros" className="btn btn-link text-secondary">
                                     <span className="text-secondary">Superhero</span>
 				                </Link>
                                 <Link to="/forum" className="btn btn-link text-secondary">
