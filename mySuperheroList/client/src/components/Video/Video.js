@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-// import "../App.css";
+import "./Video.css";
 class Video extends Component {
   render() {
     return (
       <div className="video-content">
         <table key={this.props.id} id={this.props.id}>
+          <thead>
+            <th className="video">{this.props.title}</th>
+          </thead>
           <tbody>
             <tr>
-              <td className="videos">
+              <td>
                 <iframe
-                  width="560"
-                  height="315"
+                  // className="videos"
+                  width="400"
+                  height="200"
                   title={this.props.title}
                   src={"https://www.youtube.com/embed/" + this.props.id}
                   frameBorder="0"

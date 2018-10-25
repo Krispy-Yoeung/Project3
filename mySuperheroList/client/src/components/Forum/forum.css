@@ -1,13 +1,19 @@
 .App{
-    background-color: cadetblue;
+    background-color: #f8d87b;
 }
 ul {
-    background-color: cadetblue;
+    background-color: #f8d87b;
+    
+}
+
+a {
+    color:cadetblue;
 }
 
 li {
     border:black;
 }
+
 
 .card-body {
     background-color: ghostwhite;
@@ -33,6 +39,12 @@ li {
     background-position: 0% 50%;
     /* text-shadow: black 0.1em 0.1em 0.1em; */
 }
+
+#subcat {
+    color:cadetblue;
+    font:bold;
+}
+
 
 
 

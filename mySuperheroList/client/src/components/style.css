@@ -1,56 +1,44 @@
-
 .lead {
-    color: cadetblue;
-    background-color:white;
-    opacity: 90%;
+  color: white;
 }
 
 .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;    
-    text-align: center;
-    margin-top: 10%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
 }
 
 .SignUpContainer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 10%;
-    color: black;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10%;
+  color: black;
 }
 
 .LogInContainer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 10%;
-    color: black;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10%;
+  color: black;
 }
 
 input {
-    text-align: center;
-    padding: 7px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 8px;
+  text-align: center;
+  padding: 7px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 8px;
 }
 
 .btn {
-   background-color: ghostwhite;
-    color: teal;
-    border: black;
+  background-color: black;
+  color: #828186;
+  border: black;
+  font-size: 16px;
 }
 
 .loginForm {
-    text-align:center;
+  text-align: center;
 }
-
-#logintoadd {
-    margin-left: auto;
-    margin-top:  60px;
-    margin-right: auto;
-    display: block;
-    width: 80%;
-}
-
-

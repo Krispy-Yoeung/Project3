@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 import { Col, Row, Container } from "../Grid";
 import ComicCharacters from "../ComicCharacters";
-import Youtube from "../Youtube";
-// import Youtube from "../SearchBar";
 
 import "./DashBoard.css";
 import SearchBar from "../SearchBar";
@@ -34,10 +32,20 @@ class Dashboard extends Component {
           <ComicRows
             key={char.id}
             name={char.name}
-            image={char.image.url}
-            bio={char.biography.publisher.toUpperCase()}
-            heroOrVillian={char.biography.alignment.toUpperCase()}
-            group={char.connections["group-affiliation"]}
+            image={char.image.url || "No Image found"}
+            bio={
+              char.biography.publisher.toUpperCase() || "No publishers found"
+            }
+            heroOrVillain={
+              char.biography.alignment.toUpperCase() || "No alignment found"
+            }
+            group={
+              char.connections["group-affiliation"] ||
+              "No Group-Affiliation found"
+            }
+            realName={char.biography["full-name"] || "No Real Name found"}
+            alias={char.biography.aliases || "No Alias found"}
+            ego={char.biography["alter-egos"] || "No Alter Ego found"}
           />
         );
         comicRows.push(comicRow);
@@ -60,9 +68,6 @@ class Dashboard extends Component {
           <Col size="md-12">
             <ComicCharacters rows={this.state.rows} />
           </Col>
-          {/* <Col size="md-4">
-            <Youtube />
-          </Col> */}
         </Row>
       </Container>
     );

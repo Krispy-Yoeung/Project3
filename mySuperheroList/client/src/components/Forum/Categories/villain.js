@@ -29,10 +29,10 @@ class Villain extends Component {
             <Fragment>
                 <div className="categories">
                     <ul>
-                        <li><Link to="/forum">All</Link></li>
-                        <li><Link to="/forum/superhero">Superhero</Link></li>
-                        <li><Link to="/forum/villain">Villain</Link></li>                       
-                        <li><Link to="/forum/random">Random</Link></li>
+                        <Link to="/forum"><li id="subcat">All</li></Link>
+                        <Link to="/forum/superhero"><li id="subcat">Superhero</li></Link>
+                        <Link to="/forum/villain"><li id="subcat">Villain</li></Link>
+                        <Link to="/forum/random"><li id="subcat">Random</li></Link>
                         
                     </ul>
                 </div>

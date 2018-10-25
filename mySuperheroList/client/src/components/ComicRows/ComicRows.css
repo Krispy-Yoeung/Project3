@@ -1,11 +1,27 @@
 .table {
   margin: 10px;
-  border: solid 2px white;
+  border: solid 3px #161511;
   width: 100%;
-  text-align: left;
+  /* border-top: 1px black solid; */
 }
 
 .pictures {
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 250px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  text-align: left;
+}
+
+.name-picture {
+  padding: 0px;
+  width: 250px;
+  height: 250px;
+}
+
+.bold {
+  font-weight: bold;
 }

@@ -78,14 +78,14 @@
     text-align: center;
     padding: 10px;
     margin-top: 10%;
-    color: darkred;
+    color: black;
 }
 
 .LogInContainer {
     text-align: center;
     padding: 10px;
     margin-top: 10%;
-    color: darkred;
+    color: cadetblue;
 }
 
 input {
@@ -98,6 +98,7 @@ input {
 
 .btn {
     background-color: ghostwhite;
+    
     color: teal;
     border: black;
 }

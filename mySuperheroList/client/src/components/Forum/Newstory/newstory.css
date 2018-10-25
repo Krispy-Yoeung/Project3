@@ -24,7 +24,7 @@
     width: 50%;
     border-radius: 8px;
     text-align: left;
-    border-color: grey;
+    border-color: cadetblue;
     padding: 5px;
 }
 
@@ -43,8 +43,8 @@
 
 button {
     background-color:ghostwhite;
-    color: teal;
-    border: black;
+    color: cadetblue;
+    border: cadetblue;
     margin-left: 4%;
     margin-top: 2%;
     border-radius: 8px;

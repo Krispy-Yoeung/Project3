@@ -1,7 +1,7 @@
 * {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 body {
-  background-color: cadetblue;
+  background: #f8d87b;
+  color: #161511;
 }

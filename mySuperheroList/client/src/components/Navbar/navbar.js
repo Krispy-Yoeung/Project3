@@ -1,47 +1,54 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 // import logo from '../logo.svg';
-import axios from 'axios'
+import axios from "axios";
 import "./navbar.css";
 
 class Navbar extends Component {
-    constructor() {
-        super()
-        this.logout = this.logout.bind(this)
-    }
+  constructor() {
+    super();
+    this.logout = this.logout.bind(this);
+  }
 
-    logout(event) {
-        event.preventDefault()
-        console.log('logging out')
-        axios.post('/user/logout').then(response => {
-          console.log(response.data)
-          if (response.status === 200) {
-            this.props.updateUser({
-              loggedIn: false,
-              username: null
-            })
-          }
-        }).catch(error => {
-            console.log('Logout error')
-        })
-      }
+  logout(event) {
+    event.preventDefault();
+    console.log("logging out");
+    axios
+      .post("/user/logout")
+      .then(response => {
+        console.log(response.data);
+        if (response.status === 200) {
+          this.props.updateUser({
+            loggedIn: false,
+            username: null
+          });
+        }
+      })
+      .catch(error => {
+        console.log("Logout error");
+      });
+  }
 
-    render() {
-        const loggedIn = this.props.loggedIn;
-        console.log('navbar render, props: ')
-        console.log(this.props);
-        
-        return (
-            <nav className="navbar navbar-expand-sm bg-light navbar-light">
-                        <div id="top-filler"></div>
-                        <a className="navbar-brand" href="/">
-                            <img src="https://via.placeholder.com/350x150" width="50" height="50"  alt=""/>
-                        </a>
-                            <h1 className="App-title">mySuperheroList</h1>
-                        {loggedIn ? (
-                            <section className="navbar-section">
-                                <Link to="/dashboard" className="btn btn-link ml-5">
-                                    <span className="text-secondary">Dashboard</span>
+  render() {
+    const loggedIn = this.props.loggedIn;
+    console.log("navbar render, props: ");
+    console.log(this.props);
+
+    return (
+      <nav className="navbar navbar-expand-sm navbar-light">
+        <div id="top-filler" />
+        <a className="navbar-brand" href="/">
+          <img
+            className="title-image"
+            src="http://freeaddon.com/wp-content/uploads/2017/09/marvel-vs-dc-0.jpg"
+            alt="Marvel vs DC"
+          />
+        </a>
+        <h1 className="App-title">mySuperheroList</h1>
+        {loggedIn ? (
+          <section className="navbar navbar-default navbar-static-top">
+            <Link to="/dashboard" className="btn btn-link ml-5">
+                                    <span className="text-secondary">Super Finder</span>
 				                </Link>
                                 {/* <Link to="/superheros" className="btn btn-link text-secondary">
                                     <span className="text-secondary">Superhero</span>
@@ -69,11 +76,9 @@ class Navbar extends Component {
                 
                             </section>
                         )}
-            </nav>
-
-        );
-
-    }
+      </nav>
+    );
+  }
 }
 
-export default Navbar
+export default Navbar;

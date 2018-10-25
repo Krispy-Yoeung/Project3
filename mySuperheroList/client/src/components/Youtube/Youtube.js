@@ -15,9 +15,9 @@ class Youtube extends Component {
     let URL = "https://www.googleapis.com/youtube/v3/search/";
     let options = {
       part: "snippet",
-      maxResults: 10,
+      maxResults: 25,
       key: key,
-      q: searchTerm
+      q: `${this.props.name} ${this.props.publishers} ${this.props.realName}`
     };
     $.getJSON(URL, options, data => {
       const res = data.items;
@@ -40,28 +40,16 @@ class Youtube extends Component {
     });
   }
 
-  searchHandler = event => {
-    const searchTerm = event.target.value;
-    this.videoSearch(searchTerm);
-  };
+  // searchHandler = event => {
+  //   const searchTerm = event.target.value;
+  //   this.videoSearch(searchTerm);
+  // };
 
   render() {
     return (
-      <div className="App">
-        <input
-          style={{
-            fontSize: 24,
-            display: "block",
-            width: "99%",
-            paddingTop: 8,
-            paddingBottom: 8,
-            paddingLeft: 16
-          }}
-          onChange={this.searchHandler.bind(this)}
-          placeholder="Enter search term"
-        />
-        <h1>Youtube Videos</h1>
-        <div className="video-content">{this.state.iframe}</div>
+      <div>
+        <h1>Video Viewing</h1>
+        {this.state.iframe}
       </div>
     );
   }

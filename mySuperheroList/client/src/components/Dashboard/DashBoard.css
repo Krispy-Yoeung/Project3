@@ -1,15 +1,10 @@
-.table {
+/* .table {
   margin: 10px;
-  border: solid 2px white;
   width: 100%;
   text-align: left;
-}
+} */
 
 .pictures {
   height: 200px;
   width: 200px;
-}
-
-table {
-  height: auto;
 }
