@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import axios from 'axios';
 import FormResults from '../forumResult'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./style.css"
 
 
@@ -36,17 +36,18 @@ class Superhero extends Component {
                         
                     </ul>
                 </div>
-                <div className="jumbotron jumbotron-fluid" id="random">
+                <div className="jumbotron jumbotron-fluid" id="superherotron">
                     <div className="container">
-                        <h1 className="display-4 text-center">Superhero Topics</h1>
-                        <p className="lead text-center">Your daily dose of hero activity</p>
+                        <h1 id="allforum" className="display-4 text-center">Superhero Topics
+                        <p id="allforum" className="lead text-center">Your daily dose of heroism</p>
+                        </h1>
                     </div>
                 </div>
                 <div className="container">
                     <div className="row">
                         <div className="createNew float-right">
                         {loggedIn ? (
-                            <Link to="/newtopic" className="btn btn-warning float-right" role="button">Create New Topic</Link>
+                            <Link to="/newstory" className="btn btn-warning float-right" role="button">Create New Topic</Link>
                         ) : (
                             <Link to="/login" className="btn btn-warning float-right" role="button">Create New Topic</Link>
                         )}

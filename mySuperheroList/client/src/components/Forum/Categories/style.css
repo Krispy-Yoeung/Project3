@@ -36,12 +36,33 @@
 }
 
 
-#randomtron {
-   
+#alltron {
+    background-image: url("https://comicsmedia.ign.com/comics/image/article/122/1224522/unlocking-the-future-of-the-dc-universe-20120508034834640.jpg");
     background-size: cover;
     background-position: 0% 25%;
-    text-shadow: black 0.1em 0.1em 0.1em;
+    /* text-shadow: black 0.1em 0.1em 0.1em; */
 }
+
+#villaintron {
+    background-image: url("https://www.dccomics.com/sites/default/files/GalleryComics_1900x900_ForeverEvil_20131211_52ad399567dd96.15491806.jpg");
+    background-size: cover;
+    background-position: 0% 25%;
+    /* text-shadow: black 0.1em 0.1em 0.1em; */
+}
+#superherotron {
+    background-image: url("https://www.dccomics.com/sites/default/files/header_5a1f3c21727280.99713319.jpg");
+    background-size: cover;
+    background-position: 0% 25%;
+    /* text-shadow: black 0.1em 0.1em 0.1em; */
+}
+#randomtron {
+    background-image: url("https://cld.goliath.com/image/upload/t_tn,f_auto,q_auto,$h_375,$w_1050/go/2018/01/batman-slapping-robin-1050x375.jpg");
+    
+    background-size: cover;
+    background-position: 0% 25%;
+    /* text-shadow: black 0.1em 0.1em 0.1em; */
+}
+
 
 
 
@@ -95,6 +116,12 @@ input {
 
 .commentForm {
     text-align:center;
+}
+
+#allforum {
+    color:rgb(69, 158, 160);
+    opacity: .85;
+    background-color: white;
 }
 
 

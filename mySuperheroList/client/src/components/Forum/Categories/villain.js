@@ -36,17 +36,18 @@ class Villain extends Component {
                         
                     </ul>
                 </div>
-                <div className="jumbotron jumbotron-fluid" id="random">
+                <div className="jumbotron jumbotron-fluid" id="villaintron">
                     <div className="container">
-                        <h1 className="display-4 text-center">Villain Topics</h1>
-                        <p className="lead text-center">Your daily dose of crime</p>
+                        <h1 id="allforum" className="display-4 text-center">Villain Topics
+                        <p  id="allforum"className="lead text-center">Your daily dose of crime</p>
+                        </h1>
                     </div>
                 </div>
                 <div className="container">
                     <div className="row">
                         <div className="createNew float-right">
                         {loggedIn ? (
-                            <Link to="/newtopic" className="btn btn-warning float-right" role="button">Create New Topic</Link>
+                            <Link to="/newstory" className="btn btn-warning float-right" role="button">Create New Topic</Link>
                         ) : (
                             <Link to="/login" className="btn btn-warning float-right" role="button">Create New Topic</Link>
                         )}

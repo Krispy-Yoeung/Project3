@@ -12,11 +12,11 @@ class Random extends Component {
     }
 
     componentDidMount() {
-        this.getDrama()
+        this.getRandom()
     }
 
-    getDrama = () => {
-        axios.get("/drama").then(res => {
+    getRandom = () => {
+        axios.get("/random").then(res => {
             this.setState({ articles: res.data })
         })
         console.log(this.state.articles)
@@ -31,22 +31,23 @@ class Random extends Component {
                     <ul>
                         <li><Link to="/forum">All</Link></li>
                         <li><Link to="/forum/superhero">Superhero</Link></li>
-                        <li><Link to="/forum/villain">Villain</Link></li>                                        
+                        <li><Link to="/forum/villain">Villain</Link></li>                       
                         <li><Link to="/forum/random">Random</Link></li>
                         
                     </ul>
                 </div>
-                <div className="jumbotron jumbotron-fluid" id="random">
+                <div className="jumbotron jumbotron-fluid" id="randomtron">
                     <div className="container">
-                        <h1 className="display-4 text-center">Random Topics</h1>
-                        <p className="lead text-center">General interest topics that don't fall into one of the sub-categories</p>
+                        <h1 id="allforum" className="display-4 text-center">Random Topics
+                        <p id="allforum" className="lead text-center">General interest topics that don't fall into one of the sub-categories</p>
+                        </h1>
                     </div>
                 </div>
                 <div className="container">
                     <div className="row">
                         <div className="createNew float-right">
                         {loggedIn ? (
-                            <Link to="/newtopic" className="btn btn-warning float-right" role="button">Create New Topic</Link>
+                            <Link to="/newstory" className="btn btn-warning float-right" role="button">Create New Topic</Link>
                         ) : (
                             <Link to="/login" className="btn btn-warning float-right" role="button">Create New Topic</Link>
                         )}

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import { Redirect } from 'react-router-dom'
-import './newTopic.css'
+import './newstory.css'
 
-class NewTopic extends Component {
+class NewStory extends Component {
 
     state = {
         title: "",
         author: "",
         description: "",
-        genre: "random",
+        genre: "superhero",
         redirectTo: null
     }
 
@@ -53,10 +53,11 @@ class NewTopic extends Component {
                 <div>
                     <div className="form-group newstoryform container">
                         <div className="genrePick">
-                        <label className="form-label1" htmlFor="title">Pick a sub-category:    </label>
+                        <label className="form-label1" htmlFor="title">Sub-category:    </label>
                             <select name="genre" className="custom-select custom-select-md" value={this.state.genre} onChange={this.handleInputChange}>
-                                <option value="funny">Superhero</option>
-                                <option value="horror">Random</option>
+                                <option value="superhero">Superhero</option>
+                                <option value="villain">Villain</option>
+                                <option value="random">Random</option>
                                 
                             </select>
                         </div>
@@ -73,14 +74,14 @@ class NewTopic extends Component {
                             </div>
                         </div>
                         <div className="descriptionPick">    
-                        <label className="form-label3" htmlFor="description">Story:</label>
+                        <label className="form-label3" htmlFor="description">Comment:</label>
                             <div>
                                 <textarea className="form-input2"
                                     type="text"
                                     id="description"
                                     name="description"
-                                    rows="10"
-                                    cols="40"
+                                    rows="15"
+                                    cols="100"
                                     value={this.state.description}
                                     onChange={this.handleInputChange}
                                 />
@@ -93,11 +94,11 @@ class NewTopic extends Component {
                 ) : (
                     <div>
                     <div className="form-group">
-                        <label className="form-label" htmlFor="title">Pick sub-category:</label>
+                        <label className="form-label" htmlFor="title">Pick the sub-category:</label>
                             <select name="genre" className="custom-select custom-select-md" value={this.state.genre} onChange={this.handleInputChange} disabled>
-                                <option value="funny">Superhero</option>
-                                <option value="horror">Random</option>
-                                
+                                <option value="superhero">Superhero</option>
+                                <option value="villain">Villain</option>
+                                <option value="random">Random</option>
                             </select>
                         <label className="form-label" htmlFor="title">Title:</label>
                             <div>
@@ -109,7 +110,7 @@ class NewTopic extends Component {
                                     disabled
                                 />
                             </div>
-                        <label className="form-label" htmlFor="description">Story:</label>
+                        <label className="form-label" htmlFor="description">Comment:</label>
                             <div className="textarea1">
                                 <textarea className="form-input"
                                     type="text"
@@ -132,4 +133,4 @@ class NewTopic extends Component {
     }
 }
 
-export default NewTopic;
+export default NewStory;

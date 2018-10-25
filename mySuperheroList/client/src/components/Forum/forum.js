@@ -39,15 +39,15 @@ class Forum extends Component {
                 </div>
                 <div className="jumbotron jumbotron-fluid" id="alltron">
                     <div className="container">
-                        <h1 className="display-4 text-center">All topic</h1>
-                        <p className="lead text-center">Below are the topics from all categories</p>
+                        <h1 id="allforum"className="display-4 text-center">All topic
+                        <p  id="allforum" className="lead text-center">Below are the topics from all categories</p></h1>
                     </div>
                 </div>
                 <div className="container">
                     <div className="row">
                         <div className="createNew float-right">
                         {loggedIn ? (
-                            <Link to="/newtopic" className="btn btn-warning float-right" role="button">Create New Topic</Link>
+                            <Link to="/newstory" className="btn btn-warning float-right" role="button">Create New Topic</Link>
                         ) : (
                             <Link to="/login" className="btn btn-warning float-right" role="button">Create New Topic</Link>
                         )}

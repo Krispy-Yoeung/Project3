@@ -13,12 +13,13 @@ import Dashboard from './components/Dashboard'
 
 import Footer from './components/Footer/footer'
 import Forum from './components/Forum/forum';
+import Comments from './components/Forum/Comments/comment'
 import Random from './components/Forum/Categories/random';
 import Superhero from './components/Forum/Categories/superhero';
 import Villain from './components/Forum/Categories/villain';
 
 
-import NewTopic from './components/Forum/NewTopic/newTopic';
+import NewStory from './components/Forum/Newstory/newstory';
 
 
 class App extends Component {
@@ -105,9 +106,9 @@ class App extends Component {
             />}
         />
         <Route
-          exact path="/newtopic"
+          exact path="/newstory"
           render={() =>
-            <NewTopic
+            <NewStory
               username={this.state.username}
               loggedIn={this.state.loggedIn}
             />}
@@ -132,6 +133,10 @@ class App extends Component {
             <Villain
               loggedIn={this.state.loggedIn}
             />}
+        />
+        <Route
+          exact path="/story/:id"
+          component={Comments} 
         />
         
         <Footer />

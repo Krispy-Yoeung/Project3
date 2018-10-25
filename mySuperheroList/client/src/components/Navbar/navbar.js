@@ -43,9 +43,9 @@ class Navbar extends Component {
                                 <Link to="/dashboard" className="btn btn-link ml-5">
                                     <span className="text-secondary">Dashboard</span>
 				                </Link>
-                                <Link to="/superheros" className="btn btn-link text-secondary">
+                                {/* <Link to="/superheros" className="btn btn-link text-secondary">
                                     <span className="text-secondary">Superhero</span>
-				                </Link>
+				                </Link> */}
                                 <Link to="/forum" className="btn btn-link text-secondary">
                                     <span className="text-secondary">Forum</span>
 				                </Link>
@@ -57,6 +57,9 @@ class Navbar extends Component {
                                 <Link to="/" className="btn btn-link text-secondary ml-5">
                                     <span className="text-secondary">Home</span>
                                 </Link>
+                                <Link to="/forum" className="btn btn-link text-secondary">
+                                    <span className="text-secondary">Forum</span>
+				                </Link>
                                 <Link to="/login" className="btn btn-link text-secondary">
                                     <span className="text-secondary">Login</span>
 				                </Link>
